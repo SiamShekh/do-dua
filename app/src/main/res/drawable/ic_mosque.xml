@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="140dp"
+    android:viewportWidth="360"
+    android:viewportHeight="140">
+    <path
+        android:fillColor="@color/mosque_fill"
+        android:pathData="M0,140 L0,92 L18,92 L18,70 L38,70 L38,50 L58,50 L48,28 L68,50 L88,50 L88,70 L108,70 L108,50 L128,50 L118,28 L138,50 L158,50 L158,70 L178,70 L178,40 C178,18 202,8 180,0 C214,8 238,18 238,40 L238,70 L258,70 L258,50 L278,50 L268,28 L288,50 L308,50 L308,70 L328,70 L328,92 L360,92 L360,140 Z" />
+    <path
+        android:fillColor="#005F56"
+        android:pathData="M38,92h70v48h-70zM148,80h64v60h-64zM252,92h70v48h-70z" />
+</vector>

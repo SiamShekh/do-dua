@@ -1,0 +1,30 @@
+package com.syntax.dodua;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.window.SplashScreenView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.syntax.dodua.ui.SystemBars;
+
+@SuppressLint("CustomSplashScreen")
+public class SplashActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            getSplashScreen().setOnExitAnimationListener(SplashScreenView::remove);
+        }
+        SystemBars.apply(this, false);
+        setContentView(R.layout.activity_splash);
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }, 1800);
+    }
+}

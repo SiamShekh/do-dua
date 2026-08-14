@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.DoDua" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryVariant">@color/teal_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_primary</item>
+        <item name="colorSecondaryVariant">@color/teal_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowBackground">@color/page_bg</item>
+        <item name="bottomNavigationStyle">@style/Widget.DoDua.BottomNav</item>
+    </style>
+
+    <style name="Theme.DoDua.Splash" parent="Theme.DoDua">
+        <item name="android:statusBarColor">@color/splash_bg</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <style name="TextAppearance.DoDua.Arabic">
+        <item name="android:fontFamily">@font/noto_naskh_arabic</item>
+        <item name="fontFamily">@font/noto_naskh_arabic</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.DoDua.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="backgroundTint">@color/surface</item>
+        <item name="elevation">8dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+</resources>

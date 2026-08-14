@@ -1,0 +1,24 @@
+{
+  "bn": [
+    {
+      "name": "সকালের যিকির",
+      "slug": "morning-dhikr"
+    },
+    {
+      "name": "সন্ধ্যার যিকির",
+      "slug": "evening-dhikr"
+    },
+    {
+      "name": "দৈনিক দোয়া",
+      "slug": "daily-dua"
+    },
+    {
+      "name": "নির্বাচিত দোয়া",
+      "slug": "selected-dua"
+    },
+    {
+      "name": "সালাতের পর যিকির",
+      "slug": "dhikr-after-salah"
+    }
+  ]
+}

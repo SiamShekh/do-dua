@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Do dua</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_dhikr">Dhikr</string>
+    <string name="nav_dua">Dua</string>
+    <string name="nav_profile">Profile</string>
+    <string name="recommended_duas">Recommended Duas</string>
+    <string name="todays_dhikr">Today’s Dhikr</string>
+    <string name="dua_of_the_day">Dua of the Day</string>
+    <string name="daily_dhikr">Daily Dhikr</string>
+    <string name="dhikr_of_the_day">Dhikr of the Day</string>
+    <string name="dummy_hijri_date">14 Muharram 1448 H</string>
+    <string name="search">Search</string>
+    <string name="back">Back</string>
+    <string name="read_full">সম্পূর্ণ পড়ুন</string>
+    <string name="meaning_label">অর্থ</string>
+    <string name="tap_to_count">Tap to count</string>
+    <string name="profile_name">Guest</string>
+    <string name="profile_subtitle">Keep your heart busy with dhikr</string>
+    <string name="toggle_theme">Toggle dark mode</string>
+</resources>

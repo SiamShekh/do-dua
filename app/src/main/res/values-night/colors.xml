@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_primary">#2BBBAD</color>
+    <color name="teal_dark">#8ED9CF</color>
+    <color name="teal_deep">#C5F0EA</color>
+    <color name="teal_soft">#16332F</color>
+    <color name="page_bg">#071110</color>
+    <color name="surface">#10201D</color>
+    <color name="card_stroke">#1F433E</color>
+    <color name="text_primary">#EAF6F3</color>
+    <color name="text_secondary">#9BB5B0</color>
+    <color name="icon_inactive">#6B8580</color>
+    <color name="divider">#1A3330</color>
+    <color name="mosque_fill">#4DB6AC</color>
+    <color name="theme_toggle_fill">#33FFFFFF</color>
+    <color name="header_bg">#0A4540</color>
+    <color name="splash_bg">#00897B</color>
+</resources>
