@@ -45,6 +45,8 @@ public class ContentListAdapter extends RecyclerView.Adapter<ContentListAdapter.
         holder.index.setText(String.format(Locale.US, "%02d", position + 1));
         holder.title.setText(item.title);
         holder.translation.setText(item.translation);
+        ReadingSettings.applyBangla(holder.title, false);
+        ReadingSettings.applyBangla(holder.translation, false);
         holder.meta.setText(item.category);
         if (item.targetCount > 0) {
             holder.count.setVisibility(View.VISIBLE);

@@ -106,9 +106,11 @@
                     android:id="@+id/text_arabic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_naskh_arabic"
                     android:gravity="center"
                     android:lineSpacingExtra="10dp"
                     android:textColor="@color/teal_deep"
+                    android:textDirection="rtl"
                     android:textSize="24sp"
                     tools:text="سُبْحَانَ اللّٰهِ" />
 

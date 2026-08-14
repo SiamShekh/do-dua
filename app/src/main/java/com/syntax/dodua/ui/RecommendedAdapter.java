@@ -37,6 +37,8 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
         ContentItem item = items.get(position);
         holder.arabic.setText(item.arabic);
         holder.title.setText(item.title);
+        ReadingSettings.applyArabic(holder.arabic, false);
+        ReadingSettings.applyBangla(holder.title, false);
         holder.itemView.setOnClickListener(v -> onClick.accept(item));
     }
 

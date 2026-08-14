@@ -12,6 +12,25 @@
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
         <item name="android:windowBackground">@color/page_bg</item>
         <item name="bottomNavigationStyle">@style/Widget.DoDua.BottomNav</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.DoDua.BottomSheet</item>
+    </style>
+
+    <style name="Theme.DoDua.BottomSheet" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.DoDua.ModalSheet</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="Widget.DoDua.ModalSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.DoDua.Sheet</item>
+    </style>
+
+    <style name="ShapeAppearance.DoDua.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">36dp</item>
+        <item name="cornerSizeTopRight">36dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <style name="Theme.DoDua.Splash" parent="Theme.DoDua">
@@ -19,13 +38,6 @@
         <item name="android:navigationBarColor">@color/splash_bg</item>
         <item name="android:windowBackground">@color/splash_bg</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
-    </style>
-
-    <style name="TextAppearance.DoDua.Arabic">
-        <item name="android:fontFamily">@font/noto_naskh_arabic</item>
-        <item name="fontFamily">@font/noto_naskh_arabic</item>
-        <item name="android:textDirection">rtl</item>
-        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="Widget.DoDua.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">

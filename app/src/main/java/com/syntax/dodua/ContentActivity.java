@@ -15,6 +15,7 @@ import com.syntax.dodua.data.ContentItem;
 import com.syntax.dodua.data.ContentRepository;
 import com.syntax.dodua.ui.SystemBars;
 import com.syntax.dodua.ui.ThemeSettings;
+import com.syntax.dodua.ui.ReadingSettings;
 
 import java.util.List;
 
@@ -75,6 +76,7 @@ public class ContentActivity extends AppCompatActivity {
             TextView tab = (TextView) LayoutInflater.from(this)
                     .inflate(R.layout.item_tab, tabs, false);
             tab.setText(relatedItem.title);
+            ReadingSettings.applyBangla(tab, false);
             tab.setSelected(relatedItem.id.equals(item.id));
             tab.setOnClickListener(v -> bind(relatedItem));
             tabs.addView(tab);
@@ -94,6 +96,28 @@ public class ContentActivity extends AppCompatActivity {
         } else {
             counter.setVisibility(View.GONE);
         }
+        applyReadingStyle();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        applyReadingStyle();
+    }
+
+    private void applyReadingStyle() {
+        TextView arabic = findViewById(R.id.text_arabic);
+        TextView translation = findViewById(R.id.text_translation);
+        TextView title = findViewById(R.id.text_item_title);
+        TextView transliteration = findViewById(R.id.text_transliteration);
+        TextView notes = findViewById(R.id.text_notes);
+        TextView benefits = findViewById(R.id.text_benefits);
+        ReadingSettings.applyArabic(arabic, true);
+        ReadingSettings.applyBangla(translation, true);
+        ReadingSettings.applyBangla(title, false);
+        ReadingSettings.applyBangla(notes, false);
+        ReadingSettings.applyBangla(benefits, false);
+        ReadingSettings.applyFont(transliteration, ReadingSettings.arabicFont(this).fontRes);
     }
 
     private void setOptionalText(int viewId, String value) {

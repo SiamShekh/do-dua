@@ -43,6 +43,8 @@ public class HomeFragment extends Fragment {
         ContentItem hero = data.dhikrOfTheDay();
         ((TextView) view.findViewById(R.id.text_hero_arabic)).setText(hero.arabic);
         ((TextView) view.findViewById(R.id.text_hero_translation)).setText(hero.translation);
+        ReadingSettings.applyArabic(view.findViewById(R.id.text_hero_arabic), false);
+        ReadingSettings.applyBangla(view.findViewById(R.id.text_hero_translation), false);
         View.OnClickListener openHero = v -> open(hero.id, null);
         view.findViewById(R.id.text_hero_arabic).setOnClickListener(openHero);
         view.findViewById(R.id.text_hero_translation).setOnClickListener(openHero);
@@ -71,6 +73,9 @@ public class HomeFragment extends Fragment {
             ((TextView) row.findViewById(R.id.row_title)).setText(item.title);
             ((TextView) row.findViewById(R.id.row_arabic)).setText(item.arabic);
             ((TextView) row.findViewById(R.id.row_translation)).setText(item.translation);
+            ReadingSettings.applyBangla(row.findViewById(R.id.row_title), false);
+            ReadingSettings.applyArabic(row.findViewById(R.id.row_arabic), false);
+            ReadingSettings.applyBangla(row.findViewById(R.id.row_translation), false);
             ((TextView) row.findViewById(R.id.row_meta)).setText(item.category);
             TextView count = row.findViewById(R.id.row_count);
             if (item.targetCount > 0) {

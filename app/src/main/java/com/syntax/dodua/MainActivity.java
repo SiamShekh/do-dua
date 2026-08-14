@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.syntax.dodua.ui.DhikrFragment;
 import com.syntax.dodua.ui.DuaFragment;
 import com.syntax.dodua.ui.HomeFragment;
+import com.syntax.dodua.ui.SettingsFragment;
 import com.syntax.dodua.ui.SystemBars;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             } else if (id == R.id.nav_dua) {
                 show(new DuaFragment());
+                return true;
+            } else if (id == R.id.nav_settings) {
+                show(new SettingsFragment());
                 return true;
             }
             return false;

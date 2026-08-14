@@ -12,5 +12,24 @@
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
         <item name="android:windowBackground">@color/page_bg</item>
         <item name="bottomNavigationStyle">@style/Widget.DoDua.BottomNav</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.DoDua.BottomSheet</item>
+    </style>
+
+    <style name="Theme.DoDua.BottomSheet" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.DoDua.ModalSheet</item>
+        <item name="android:backgroundDimAmount">0.62</item>
+    </style>
+
+    <style name="Widget.DoDua.ModalSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.DoDua.Sheet</item>
+    </style>
+
+    <style name="ShapeAppearance.DoDua.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">36dp</item>
+        <item name="cornerSizeTopRight">36dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 </resources>
